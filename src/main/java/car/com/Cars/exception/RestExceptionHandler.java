@@ -36,7 +36,7 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
      */
     @ExceptionHandler(CarNotFoundException.class)
     public ResponseEntity<Object> handleCarNotFoundException(HttpServletRequest request, CarNotFoundException exception) {
-        ExceptionResponse exceptionResponse = new ExceptionResponse(HttpStatus.NOT_FOUND);
+        ExceptionResponse exceptionResponse = new ExceptionResponse(HttpStatus.NO_CONTENT);
         exceptionResponse.setMessage(exception.getMessage() + " " + request.getRequestURI());
         return buildResponseEntity(exceptionResponse);
     }

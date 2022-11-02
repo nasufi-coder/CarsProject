@@ -36,7 +36,7 @@ paths:
         "200":
           description: OK
           content:
-            '*/*':
+            application/json:
               schema:
                 $ref: '#/components/schemas/CarDTO'
   /cars/create:
@@ -54,7 +54,7 @@ paths:
         "200":
           description: OK
           content:
-            '*/*':
+            application/json:
               schema:
                 $ref: '#/components/schemas/CarDTO'
   /cars/{id}:
@@ -73,7 +73,7 @@ paths:
         "200":
           description: OK
           content:
-            '*/*':
+            application/json:
               schema:
                 $ref: '#/components/schemas/CarDTO'
   /cars/delete/{id}:
@@ -92,7 +92,7 @@ paths:
         "200":
           description: OK
           content:
-            '*/*':
+            application/json:
               schema:
                 $ref: '#/components/schemas/CarDTO'
 components:

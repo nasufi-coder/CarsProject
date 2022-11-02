@@ -7,7 +7,8 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @ComponentScan(
 		basePackages = {
-				"com.baeldung.openapi"
+				"com.baeldung.openapi",
+				"car.com.Cars"
 		}
 )
 public class CarsApplication {

@@ -43,7 +43,7 @@ public class CarControllerScenarioTest extends SpringScenarioTest<GivenBasicMode
         when().a_request(HttpMethod.GET, "/cars/all")
                 .and()
                 .is_sent();
-        then().status_is_$(HttpStatus.NOT_FOUND);
+        then().status_is_$(HttpStatus.NO_CONTENT);
     }
 
     /**
@@ -54,7 +54,7 @@ public class CarControllerScenarioTest extends SpringScenarioTest<GivenBasicMode
     @Test
     public void return_deleted_car() throws Exception {
         given().car_exist_in_db();
-        when().a_request(HttpMethod.DELETE, "/cars/delete/{id}", 1)
+        when().a_request(HttpMethod.DELETE, "/cars/delete/{id}", given().getLastIdInserted())
                 .and()
                 .is_sent();
         then().status_is_$(HttpStatus.ACCEPTED);
@@ -71,7 +71,7 @@ public class CarControllerScenarioTest extends SpringScenarioTest<GivenBasicMode
         when().a_request(HttpMethod.DELETE, "/cars/delete/{id}", 1)
                 .and()
                 .is_sent();
-        then().status_is_$(HttpStatus.NOT_FOUND);
+        then().status_is_$(HttpStatus.NO_CONTENT);
     }
 
     /**
@@ -100,8 +100,8 @@ public class CarControllerScenarioTest extends SpringScenarioTest<GivenBasicMode
     @Test
     public void return_updated_car() throws Exception {
         var carToSave = CarFactory.createCarDTO();
-        carToSave.setId(1);
         given().car_exist_in_db();
+        carToSave.setId(given().getLastIdInserted());
         when().a_request(HttpMethod.PUT, "/cars/update")
                 .and()
                 .with_body(carToSave)
@@ -125,7 +125,7 @@ public class CarControllerScenarioTest extends SpringScenarioTest<GivenBasicMode
                 .with_body(carToSave)
                 .and()
                 .is_sent();
-        then().status_is_$(HttpStatus.NOT_FOUND);
+        then().status_is_$(HttpStatus.NO_CONTENT);
     }
 
     /**
@@ -136,13 +136,41 @@ public class CarControllerScenarioTest extends SpringScenarioTest<GivenBasicMode
     @Test
     public void return_updated_field_matches() throws Exception {
         var carToSave = CarFactory.createCarDTO();
-        carToSave.setId(1);
         given().car_exist_in_db();
+        carToSave.setId(given().getLastIdInserted());
         when().a_request(HttpMethod.PUT, "/cars/update")
                 .and()
                 .with_body(carToSave)
                 .and()
                 .is_sent();
         then().status_is_ok().field_values_is_equal_to("carName", carToSave.getCarName());
+    }
+
+    /**
+     * Check if request returns an OK status.
+     *
+     * @throws Exception in case matching goes wrong
+     */
+    @Test
+    public void return__car() throws Exception {
+        given().car_exist_in_db();
+        when().a_request(HttpMethod.GET, "/cars/{id}", given().getLastIdInserted())
+                .and()
+                .is_sent();
+        then().status_is_ok();
+    }
+
+    /**
+     * Check if not found error is handled!
+     *
+     * @throws Exception in case matching goes wrong
+     */
+    @Test
+    public void no_car_found() throws Exception {
+        given().no_car_exist_in_db();
+        when().a_request(HttpMethod.GET, "/cars/{id}", 1)
+                .and()
+                .is_sent();
+        then().status_is_$(HttpStatus.NO_CONTENT);
     }
 }
