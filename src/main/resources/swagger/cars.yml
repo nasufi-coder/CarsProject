@@ -1,6 +1,6 @@
 openapi: "3.0.0"
 info:
-  title: SCars API
+  title: Cars API
   description: Cars API
   version: 1.0.0
 
@@ -104,6 +104,10 @@ components:
           items:
             $ref: '#/components/schemas/CarDTO'
     CarDTO:
+      required:
+        - carName
+        - tireType
+        - tireSize
       type: object
       properties:
         id:

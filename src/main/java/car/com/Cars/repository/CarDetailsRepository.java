@@ -10,7 +10,7 @@ import java.util.List;
 public interface CarDetailsRepository extends JpaRepository<CarDetailsEntity, Integer> {
 
     /**
-     * removes the cars with specified id and return a list of Objects
+     * removes the cars with specified id and return Object
      *
      * @param id of the car
      * @return List<CarDetailsEntity> which are deleted from database

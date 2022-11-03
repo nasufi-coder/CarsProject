@@ -26,7 +26,7 @@ public class GivenBasicModel extends Stage<GivenBasicModel> {
     /**
      * Method to create a car in database!
      *
-     * @return
+     * @return self
      */
     public GivenBasicModel car_exist_in_db() {
         var car = CarFactory.createCarEntity();
@@ -38,7 +38,7 @@ public class GivenBasicModel extends Stage<GivenBasicModel> {
     /**
      * Empty method to stimulate an empty table!
      *
-     * @return
+     * @return self
      */
     public GivenBasicModel no_car_exist_in_db() {
         return self();

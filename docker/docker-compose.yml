@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+  db:
+    image: mysql:8
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Arben123
+    ports:
+      - 3306:3306
+    networks:
+      - newtwork
+
+networks:
+  newtwork:

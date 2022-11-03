@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: 4
+      author: Patrik
+      changes:
+        - createTable:
+            tableName: car_details
+            columns:
+              - column:
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+                  name: id
+                  type: INT
+                  autoIncrement: true
+              - column:
+                  name: car_name
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: tire_size
+                  type: float
+                  constraints:
+                    nullable: false
+              - column:
+                  name: tire_type
+                  type: varchar(50)
+                  constraints:
+                    nullable: false

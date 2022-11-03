@@ -11,7 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * Entity of car
+ * Entity of the car
  */
 @Entity
 @Table(name = "carDetails")
