@@ -20,7 +20,7 @@ public class CarDetailsController implements CarsApi {
     }
 
     @Override
-    public ResponseEntity<CarDTO> deleteCar(Integer id) {
+    public ResponseEntity<CarDTO> deleteCar(String id) {
         var response = carDetailsService.deleteCar(id);
         return ResponseEntity.status(202).build();
     }
@@ -33,7 +33,7 @@ public class CarDetailsController implements CarsApi {
     }
 
     @Override
-    public ResponseEntity<CarDTO> getCar(Integer id) {
+    public ResponseEntity<CarDTO> getCar(String id) {
         var car = carDetailsService.findById(id);
         return ResponseEntity.ok(car);
     }

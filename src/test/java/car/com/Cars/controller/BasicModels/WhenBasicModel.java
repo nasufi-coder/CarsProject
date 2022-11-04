@@ -1,15 +1,11 @@
 package car.com.Cars.controller.BasicModels;
 
-import car.com.Cars.controller.CarDetailsController;
-import com.baeldung.openapi.api.CarsApi;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tngtech.jgiven.Stage;
 import com.tngtech.jgiven.annotation.ProvidedScenarioState;
 import com.tngtech.jgiven.integration.spring.JGivenStage;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
@@ -27,6 +23,7 @@ public class WhenBasicModel extends Stage<WhenBasicModel> {
     private MockMvc mockMvc;
 
     private MockHttpServletRequestBuilder requestBuilder;
+
 
     @Autowired
     private ObjectMapper jsonMapper;

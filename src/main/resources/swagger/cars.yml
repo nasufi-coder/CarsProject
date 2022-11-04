@@ -67,8 +67,7 @@ paths:
           in: path
           required: true
           schema:
-            type: integer
-            format: int32
+            type: string
       responses:
         "200":
           description: OK
@@ -86,8 +85,7 @@ paths:
           in: path
           required: true
           schema:
-            type: integer
-            format: int32
+            type: string
       responses:
         "200":
           description: OK
@@ -107,7 +105,7 @@ components:
       type: object
       properties:
         id:
-          type: integer
+          type: string
         carName:
           type: string
         tireSize:

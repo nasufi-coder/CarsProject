@@ -9,7 +9,7 @@ import lombok.Data;
 @Data
 public class Car {
 
-    private Integer id;
+    private String id;
     private String carName;
     private Float tireSize;
     private TireTypeEnum tireType;

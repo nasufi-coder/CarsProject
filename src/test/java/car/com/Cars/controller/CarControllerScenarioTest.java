@@ -118,7 +118,7 @@ public class CarControllerScenarioTest extends SpringScenarioTest<GivenBasicMode
     @Test
     public void return_no_updated_car() throws Exception {
         var carToSave = CarFactory.createCarDTO();
-        carToSave.setId(1);
+        carToSave.setId("1");
         given().no_car_exist_in_db();
         when().a_request(HttpMethod.PUT, "/cars/update")
                 .and()

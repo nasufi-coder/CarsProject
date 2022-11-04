@@ -11,6 +11,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 /**
@@ -23,7 +24,7 @@ public class CarDetailsServiceImpl implements CarDetailsService {
     private final CarDetailsMapper carDetailsMapper;
 
     @Override
-    public CarDTO findById(Integer id) {
+    public CarDTO findById(String id) {
         var carFound = carDetailsRepository.findById(id);
         if (carFound.isEmpty()) {
             throw new CarNotFoundException("Car requested could not be found!");
@@ -53,6 +54,10 @@ public class CarDetailsServiceImpl implements CarDetailsService {
 
     @Override
     public CarDTO saveCar(CarDTO carDTO) {
+        if(carDTO.getId() == null) {
+            var uuid = UUID.randomUUID().toString();
+            carDTO.setId(uuid);
+        }
         var car = carDetailsMapper.convertDtoToBusiness(carDTO);
         var carDetailsEntity = carDetailsMapper.convertBusinessToEntity(car);
         var createdCar = carDetailsRepository.save(carDetailsEntity);
@@ -61,7 +66,7 @@ public class CarDetailsServiceImpl implements CarDetailsService {
     }
 
     @Override
-    public CarDTO deleteCar(Integer id) {
+    public CarDTO deleteCar(String id) {
         var response = carDetailsRepository.removeById(id);
         if (response.isEmpty()) {
             throw new CarNotFoundException("No records found to be deleted!");

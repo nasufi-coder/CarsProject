@@ -13,7 +13,7 @@ public class GivenBasicModel extends Stage<GivenBasicModel> {
     @Autowired
     private CarDetailsRepository repository;
 
-    Integer lastIdInserted;
+    String lastIdInserted;
 
     /**
      * Method to clean the table! Before each other method.
@@ -44,7 +44,7 @@ public class GivenBasicModel extends Stage<GivenBasicModel> {
         return self();
     }
 
-    public Integer getLastIdInserted() {
+    public String getLastIdInserted() {
         return lastIdInserted;
     }
 }

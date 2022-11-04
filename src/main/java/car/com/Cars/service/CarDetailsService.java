@@ -14,7 +14,7 @@ public interface CarDetailsService {
      * @param id of the car
      * @return CarDTO
      */
-    CarDTO findById(Integer id);
+    CarDTO findById(String id);
 
     /**
      * Find all cars
@@ -45,5 +45,5 @@ public interface CarDetailsService {
      * @param id from the car
      * @return CarDTO that is deleted from database
      */
-    CarDTO deleteCar(Integer id);
+    CarDTO deleteCar(String id);
 }

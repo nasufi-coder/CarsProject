@@ -1,13 +1,13 @@
 package car.com.Cars.repository;
 
 import car.com.Cars.model.entity.CarDetailsEntity;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 
-public interface CarDetailsRepository extends JpaRepository<CarDetailsEntity, Integer> {
+public interface CarDetailsRepository extends MongoRepository<CarDetailsEntity, String> {
 
     /**
      * removes the cars with specified id and return a list of Objects
@@ -16,5 +16,5 @@ public interface CarDetailsRepository extends JpaRepository<CarDetailsEntity, In
      * @return List<CarDetailsEntity> which are deleted from database
      */
     @Transactional
-    List<CarDetailsEntity> removeById(Integer id);
+    List<CarDetailsEntity> removeById(String id);
 }
