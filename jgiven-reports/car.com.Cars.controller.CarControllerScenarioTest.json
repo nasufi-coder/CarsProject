@@ -25,7 +25,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 34589499,
+              "durationInNanos": 50949500,
               "depth": 0,
               "parentFailed": false
             },
@@ -41,7 +41,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 9234200,
+              "durationInNanos": 12029600,
               "depth": 0,
               "parentFailed": false
             },
@@ -74,7 +74,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 12788400,
+              "durationInNanos": 23156800,
               "depth": 0,
               "parentFailed": false
             },
@@ -90,7 +90,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 107673199,
+              "durationInNanos": 141836900,
               "depth": 0,
               "parentFailed": false
             },
@@ -106,7 +106,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 2470600,
+              "durationInNanos": 3475000,
               "depth": 0,
               "parentFailed": false
             }
@@ -114,11 +114,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 183337400
+          "durationInNanos": 252806500
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 183337400
+      "durationInNanos": 252806500
     },
     {
       "className": "car.com.Cars.controller.CarControllerScenarioTest",
@@ -143,7 +143,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 132200,
+              "durationInNanos": 203800,
               "depth": 0,
               "parentFailed": false
             },
@@ -180,7 +180,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 814801,
+              "durationInNanos": 1263200,
               "depth": 0,
               "parentFailed": false
             },
@@ -196,7 +196,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 28911601,
+              "durationInNanos": 40183900,
               "depth": 0,
               "parentFailed": false
             },
@@ -219,7 +219,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 1285899,
+              "durationInNanos": 1374200,
               "depth": 0,
               "parentFailed": false
             }
@@ -227,11 +227,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 31896901
+          "durationInNanos": 44031100
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 31896901
+      "durationInNanos": 44031100
     },
     {
       "className": "car.com.Cars.controller.CarControllerScenarioTest",
@@ -256,7 +256,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 1565500,
+              "durationInNanos": 1669300,
               "depth": 0,
               "parentFailed": false
             },
@@ -293,7 +293,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 848601,
+              "durationInNanos": 1051900,
               "depth": 0,
               "parentFailed": false
             },
@@ -309,7 +309,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 4680201,
+              "durationInNanos": 6314300,
               "depth": 0,
               "parentFailed": false
             },
@@ -325,7 +325,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 145200,
+              "durationInNanos": 146400,
               "depth": 0,
               "parentFailed": false
             }
@@ -333,11 +333,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 8007401
+          "durationInNanos": 10207100
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 8007401
+      "durationInNanos": 10207100
     },
     {
       "className": "car.com.Cars.controller.CarControllerScenarioTest",
@@ -362,7 +362,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 160600,
+              "durationInNanos": 174200,
               "depth": 0,
               "parentFailed": false
             },
@@ -399,7 +399,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 932500,
+              "durationInNanos": 1308900,
               "depth": 0,
               "parentFailed": false
             },
@@ -422,7 +422,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 2317800,
+              "durationInNanos": 3691300,
               "depth": 0,
               "parentFailed": false
             },
@@ -438,7 +438,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 40526200,
+              "durationInNanos": 139202300,
               "depth": 0,
               "parentFailed": false
             },
@@ -454,7 +454,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 105800,
+              "durationInNanos": 247100,
               "depth": 0,
               "parentFailed": false
             }
@@ -462,11 +462,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 44826500
+          "durationInNanos": 146142900
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 44826500
+      "durationInNanos": 146142900
     },
     {
       "className": "car.com.Cars.controller.CarControllerScenarioTest",
@@ -491,7 +491,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 1076400,
+              "durationInNanos": 2274700,
               "depth": 0,
               "parentFailed": false
             },
@@ -507,7 +507,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 143900,
+              "durationInNanos": 192400,
               "depth": 0,
               "parentFailed": false
             },
@@ -544,7 +544,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 1126500,
+              "durationInNanos": 1184300,
               "depth": 0,
               "parentFailed": false
             },
@@ -567,7 +567,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 763300,
+              "durationInNanos": 1094100,
               "depth": 0,
               "parentFailed": false
             },
@@ -583,7 +583,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 8964900,
+              "durationInNanos": 12079900,
               "depth": 0,
               "parentFailed": false
             },
@@ -599,7 +599,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 163199,
+              "durationInNanos": 149100,
               "depth": 0,
               "parentFailed": false
             },
@@ -625,7 +625,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 29886600,
+              "durationInNanos": 46913100,
               "depth": 0,
               "parentFailed": false
             }
@@ -633,11 +633,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 42983301
+          "durationInNanos": 65457200
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 42983301
+      "durationInNanos": 65457200
     },
     {
       "className": "car.com.Cars.controller.CarControllerScenarioTest",
@@ -662,7 +662,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 970400,
+              "durationInNanos": 1107600,
               "depth": 0,
               "parentFailed": false
             },
@@ -678,7 +678,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 85301,
+              "durationInNanos": 105900,
               "depth": 0,
               "parentFailed": false
             },
@@ -711,7 +711,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 884900,
+              "durationInNanos": 1111200,
               "depth": 0,
               "parentFailed": false
             },
@@ -727,7 +727,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 3139001,
+              "durationInNanos": 3752500,
               "depth": 0,
               "parentFailed": false
             },
@@ -750,7 +750,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 1728400,
+              "durationInNanos": 1114000,
               "depth": 0,
               "parentFailed": false
             }
@@ -758,11 +758,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 7435099
+          "durationInNanos": 7857000
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 7435099
+      "durationInNanos": 7857000
     },
     {
       "className": "car.com.Cars.controller.CarControllerScenarioTest",
@@ -787,7 +787,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 452200,
+              "durationInNanos": 183400,
               "depth": 0,
               "parentFailed": false
             },
@@ -824,7 +824,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 885000,
+              "durationInNanos": 1079800,
               "depth": 0,
               "parentFailed": false
             },
@@ -847,7 +847,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 636900,
+              "durationInNanos": 832400,
               "depth": 0,
               "parentFailed": false
             },
@@ -863,7 +863,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 2940301,
+              "durationInNanos": 4284400,
               "depth": 0,
               "parentFailed": false
             },
@@ -886,7 +886,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 679101,
+              "durationInNanos": 952100,
               "depth": 0,
               "parentFailed": false
             }
@@ -894,11 +894,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 6337001
+          "durationInNanos": 8186800
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 6337001
+      "durationInNanos": 8186800
     },
     {
       "className": "car.com.Cars.controller.CarControllerScenarioTest",
@@ -923,7 +923,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 1126100,
+              "durationInNanos": 1616100,
               "depth": 0,
               "parentFailed": false
             },
@@ -939,7 +939,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 85900,
+              "durationInNanos": 210400,
               "depth": 0,
               "parentFailed": false
             },
@@ -976,7 +976,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 844000,
+              "durationInNanos": 1152000,
               "depth": 0,
               "parentFailed": false
             },
@@ -999,7 +999,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 542200,
+              "durationInNanos": 729900,
               "depth": 0,
               "parentFailed": false
             },
@@ -1015,7 +1015,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 4226100,
+              "durationInNanos": 7199300,
               "depth": 0,
               "parentFailed": false
             },
@@ -1031,7 +1031,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 111101,
+              "durationInNanos": 463900,
               "depth": 0,
               "parentFailed": false
             }
@@ -1039,11 +1039,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 7542601
+          "durationInNanos": 12450100
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 7542601
+      "durationInNanos": 12450100
     },
     {
       "className": "car.com.Cars.controller.CarControllerScenarioTest",
@@ -1068,7 +1068,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 88000,
+              "durationInNanos": 176800,
               "depth": 0,
               "parentFailed": false
             },
@@ -1105,7 +1105,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 699799,
+              "durationInNanos": 905300,
               "depth": 0,
               "parentFailed": false
             },
@@ -1121,7 +1121,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 2989500,
+              "durationInNanos": 3473200,
               "depth": 0,
               "parentFailed": false
             },
@@ -1144,7 +1144,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 872500,
+              "durationInNanos": 849900,
               "depth": 0,
               "parentFailed": false
             }
@@ -1152,11 +1152,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 5164000
+          "durationInNanos": 6025800
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 5164000
+      "durationInNanos": 6025800
     },
     {
       "className": "car.com.Cars.controller.CarControllerScenarioTest",
@@ -1181,7 +1181,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 197600,
+              "durationInNanos": 156300,
               "depth": 0,
               "parentFailed": false
             },
@@ -1218,7 +1218,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 1200999,
+              "durationInNanos": 1072900,
               "depth": 0,
               "parentFailed": false
             },
@@ -1234,7 +1234,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 2816300,
+              "durationInNanos": 2762700,
               "depth": 0,
               "parentFailed": false
             },
@@ -1257,7 +1257,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 672200,
+              "durationInNanos": 748100,
               "depth": 0,
               "parentFailed": false
             }
@@ -1265,11 +1265,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 5953499
+          "durationInNanos": 5438000
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 5953499
+      "durationInNanos": 5438000
     }
   ],
   "tagMap": {}

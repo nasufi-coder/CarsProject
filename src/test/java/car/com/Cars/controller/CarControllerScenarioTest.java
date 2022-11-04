@@ -1,6 +1,7 @@
 package car.com.Cars.controller;
 
 import car.com.Cars.config.JGivenConfig;
+import car.com.Cars.config.MockRabbitMQConfig;
 import car.com.Cars.controller.BasicModels.GivenBasicModel;
 import car.com.Cars.controller.BasicModels.ThenBasicModel;
 import car.com.Cars.controller.BasicModels.WhenBasicModel;
@@ -14,7 +15,7 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 
 @AutoConfigureMockMvc
-@Import(JGivenConfig.class)
+@Import({JGivenConfig.class, MockRabbitMQConfig.class})
 @SpringBootTest
 public class CarControllerScenarioTest extends SpringScenarioTest<GivenBasicModel, WhenBasicModel, ThenBasicModel> {
 

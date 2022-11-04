@@ -3,11 +3,15 @@ package car.com.Cars.service.impl;
 import car.com.Cars.exception.CustomExeption.CarNotFoundException;
 import car.com.Cars.exception.CustomExeption.DeleteException;
 import car.com.Cars.mapper.CarDetailsMapper;
+import car.com.Cars.model.business.Car;
 import car.com.Cars.model.entity.CarDetailsEntity;
+import car.com.Cars.model.rabbit.QueueCar;
 import car.com.Cars.repository.CarDetailsRepository;
 import car.com.Cars.service.CarDetailsService;
+import car.com.Cars.service.rabbit.RabbitMQSender;
 import com.baeldung.openapi.model.CarDTO;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,6 +25,8 @@ import java.util.stream.Collectors;
 public class CarDetailsServiceImpl implements CarDetailsService {
     private final CarDetailsRepository carDetailsRepository;
     private final CarDetailsMapper carDetailsMapper;
+
+    private final RabbitMQSender rabbitMQSender;
 
     @Override
     public CarDTO findById(Integer id) {
@@ -57,6 +63,7 @@ public class CarDetailsServiceImpl implements CarDetailsService {
         var carDetailsEntity = carDetailsMapper.convertBusinessToEntity(car);
         var createdCar = carDetailsRepository.save(carDetailsEntity);
         var carCreated = carDetailsMapper.convertEntityToBusiness(createdCar);
+        sendMessage(carCreated);
         return carDetailsMapper.convertBusinessToDto(carCreated);
     }
 
@@ -69,6 +76,16 @@ public class CarDetailsServiceImpl implements CarDetailsService {
             throw new DeleteException("No records found to be deleted!");
         }
         var carDeleted = carDetailsMapper.convertEntityToBusiness(response.get(0));
+        sendMessage(carDeleted);
         return carDetailsMapper.convertBusinessToDto(carDeleted);
+    }
+
+    private void sendMessage(Car car) {
+        var message = QueueCar.builder()
+                .carName(car.getCarName())
+                .tireSize(car.getTireSize())
+                .build();
+
+        rabbitMQSender.send(message);
     }
 }

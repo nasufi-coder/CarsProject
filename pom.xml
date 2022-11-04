@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>car.com</groupId>
-    <artifactId>Cars</artifactId>
+    <artifactId>cars</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Cars</name>
     <description>Demo project for Spring Boot</description>
@@ -36,10 +36,21 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.rabbitmq/amqp-client -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
             <version>1.4.2.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.fridujo</groupId>
+            <artifactId>rabbitmq-mock</artifactId>
+            <version>1.1.1</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>

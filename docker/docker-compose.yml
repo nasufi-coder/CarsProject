@@ -10,6 +10,16 @@ services:
       - 3306:3306
     networks:
       - newtwork
+  rabbitmq:
+    image: rabbitmq:management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=patrik
+      - RABBITMQ_DEFAULT_PASS=patrik
+    networks:
+      - newtwork
 
 networks:
   newtwork:
