@@ -11,7 +11,6 @@ import car.com.Cars.service.CarDetailsService;
 import car.com.Cars.service.rabbit.RabbitMQSender;
 import com.baeldung.openapi.model.CarDTO;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
