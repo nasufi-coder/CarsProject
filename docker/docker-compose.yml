@@ -7,19 +7,39 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: Arben123
     ports:
-      - 3306:3306
+      - "3306:3306"
     networks:
-      - newtwork
+      - network
   rabbitmq:
     image: rabbitmq:management
+    restart: always
     ports:
       - "5672:5672"
       - "15672:15672"
     environment:
-      - RABBITMQ_DEFAULT_USER=patrik
-      - RABBITMQ_DEFAULT_PASS=patrik
+      RABBITMQ_DEFAULT_USER: patrik
+      RABBITMQ_DEFAULT_PASS: patrik
     networks:
-      - newtwork
+      - network
+  first-project:
+    image: docker.io/library/cars:0.0.1-SNAPSHOT
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/cars?createDatabaseIfNotExist=true
+    networks:
+      - network
+  second-project:
+    image: docker.io/library/cars2:0.0.1-SNAPSHOT
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_RABBITMQ_HOST: rabbitmq
+    networks:
+      - network
 
 networks:
-  newtwork:
+  network:
